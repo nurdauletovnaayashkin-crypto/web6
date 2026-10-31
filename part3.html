@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3: DOM Manipulation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html" class="brand">Assignment #6</a>
+    <ul>
+      <li><a href="index.html">Part 1</a></li>
+      <li><a href="part2.html">Part 2</a></li>
+      <li><a href="part3.html" class="active">Part 3</a></li>
+      <li><a href="part4.html">Part 4</a></li>
+      <li><a href="part5.html">Part 5</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-container">
+    <div class="card">
+      <h2>Task 5: Add & Remove Elements</h2>
+      <ul id="item-list" class="styled-list">
+        <li>Initial Item 1</li>
+      </ul>
+      <button id="btn-add" class="btn-pink">Add Item</button>
+      <button id="btn-prepend" class="btn-pink">Prepend Item</button>
+      <button id="btn-remove" class="btn-pink">Remove Last Item</button>
+    </div>
+
+    <div class="card">
+      <h2>Task 6: Modifying Attributes</h2>
+      <img id="attr-img" src="https://picsum.photos/seed/pink1/250/120" style="border-radius:10px; display:block; margin-bottom:1rem;">
+      <a id="attr-link" href="https://google.com" target="_blank">Visit Current Link</a><br><br>
+      <button id="btn-change-img" class="btn-pink">Change Image Src</button>
+      <button id="btn-change-link" class="btn-pink">Change Link Href</button>
+    </div>
+
+    <div class="card">
+      <h2>Task 7: Form Interaction</h2>
+      <input type="text" id="input-name" class="input-pink" placeholder="Enter Name">
+      <input type="email" id="input-email" class="input-pink" placeholder="Enter Email">
+      
+      <div style="background: var(--pink-50); padding: 1rem; border-radius: 10px; border: 1px solid var(--pink-200);">
+        <p><strong>Live Name:</strong> <span id="out-name">---</span></p>
+        <p><strong>Live Email:</strong> <span id="out-email">---</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>Assignment #6 • jQuery Interactive App</footer>
+  <script src="js/part3.js"></script>
+</body>
+</html>
